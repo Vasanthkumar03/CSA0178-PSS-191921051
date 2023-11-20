@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int n;
+    double sum = 0.0;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    if (n < 1)
+{
+        printf("Please enter a positive value of n.\n");
+        return 1; 
+}
+    for (int i = 1; i <= n; i++) 
+{
+        sum += pow(i, i);
+}
+printf("Sum of the series 1^1 + 2^2 + 3^3 + ... + %d^%d is: %.0f\n", n, n, sum);
+return 0; 
+}
