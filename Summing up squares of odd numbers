@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() 
+{
+    int n, sum = 0;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    if (n < 1) 
+{
+        printf("Please enter a positive value of n.\n");
+        return 1; 
+}
+    for (int i = 1; i <= (2 * n - 1); i += 2) 
+{
+        sum += i * i;
+}
+    printf("Sum of the squares of odd numbers 1^2 + 3^2 + 5^2 + ... + %d^2 is: %d\n", (2 * n - 1), sum);
+    return 0;
+}
